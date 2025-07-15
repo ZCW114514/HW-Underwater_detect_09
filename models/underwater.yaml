@@ -1,0 +1,16 @@
+# YOLOv5/v8 underwater dataset config (官方标准格式)
+path: /root/Downloads/HW-Underwater_detect_09/yolo_dataset
+train: images/train  # 训练集路径（相对path）
+val: images/val      # 验证集路径
+test: images/testA   # 测试集路径（建议选testA或testB之一）
+
+# 类别定义
+names:
+  0: holothurian
+  1: echinus
+  2: scallop
+  3: starfish
+
+# 模型必需参数
+nc: 4                # 类别数
+roboflow: False      # 非Roboflow数据集
